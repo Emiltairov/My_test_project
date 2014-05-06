@@ -5,4 +5,4 @@ Using Refinery CMS.
 Administration page http://localhost:3000/refinery
 
 login: login
-passwword: logpn
+passwword: login
