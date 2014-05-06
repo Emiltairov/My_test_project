@@ -1,0 +1,52 @@
+zh-CN:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: 建立新的 Setting
+            reorder: 对 Settings 重新排序
+            reorder_done: 对 Settings 的重新排序结束
+          records:
+            title: Settings
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Settings . 点击 "Add New Setting" 创建一个setting.
+          setting:
+            view_live_html: 查看 setting 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 setting
+            delete: 永久删除 setting
+        feedbacks:
+          actions:
+            create_new: 建立新的 Feedback
+            reorder: 对 Feedbacks 重新排序
+            reorder_done: 对 Feedbacks 的重新排序结束
+          records:
+            title: Feedbacks
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Feedbacks . 点击 "Add New Feedback" 创建一个feedback.
+          feedback:
+            view_live_html: 查看 feedback 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 feedback
+            delete: 永久删除 feedback
+      settings:
+        show:
+          other: 其他 Settings
+      feedbacks:
+        show:
+          other: 其他 Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

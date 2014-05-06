@@ -1,0 +1,18 @@
+<%= t('.greeting') %>,<br/>
+<br/>
+<%= t('.you_recieved_new_feedback') %><br/>
+<br/>
+<%= t('.feedback_starts') %><br/>
+<br/>
+<%= t('.name', :default => t('activerecord.attributes.feedback.email')) %>: <%= @feedback.name %><br/>
+<%= t('.email', :default => t('activerecord.attributes.feedback.email')) %>: <%= @feedback.email %><br/>
+<%= t('.phone', :default => t('activerecord.attributes.feedback.phone')) %>: <%= @feedback.phone %><br/>
+<%= t('.message', :default => t('activerecord.attributes.feedback.message')) %>: 
+<%= @feedback.message %>
+<br/>
+<%= t('.feedback_ends') %><br/>
+<br/>
+<%= t('.closing_line') %>,<br/>
+<%= Refinery::Core.site_name %><br/>
+<br/>
+<%= t('.ps_html') %>

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="feedbacks">
+    <% @feedbacks.each do |feedback| %>
+      <li>
+
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= link_to 'New Feedback', '/feedbacks/new'%>

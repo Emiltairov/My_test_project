@@ -1,0 +1,56 @@
+tr:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Yeni Ekle Setting
+            reorder: Tekrar sirala Settings
+            reorder_done: Tekrar siralama tamamlandiSettings
+          records:
+            title: Settings
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Settings yok henuz.  Tikla "Yeni Ekle Setting"
+              eklemek senin ilk setting.
+          setting:
+            view_live_html: Bunu canlu setting goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle setting
+            delete: Bunu Sil setting sonsuza dek
+        feedbacks:
+          actions:
+            create_new: Yeni Ekle Feedback
+            reorder: Tekrar sirala Feedbacks
+            reorder_done: Tekrar siralama tamamlandiFeedbacks
+          records:
+            title: Feedbacks
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Feedbacks yok henuz.  Tikla "Yeni Ekle Feedback"
+              eklemek senin ilk feedback.
+          feedback:
+            view_live_html: Bunu canlu feedback goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle feedback
+            delete: Bunu Sil feedback sonsuza dek
+      settings:
+        show:
+          other: Diger Settings
+      feedbacks:
+        show:
+          other: Diger Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

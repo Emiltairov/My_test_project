@@ -1,0 +1,54 @@
+sk:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Pridať Setting
+            reorder: Preusporiadať Settings
+            reorder_done: Koniec radenia Settings
+          records:
+            title: Settings
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Settings. Kliknite na "Pridať Setting"
+              pre pridanie prvého setting.
+          setting:
+            view_live_html: Zobraziť náhľad setting<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť setting
+            delete: Zmazať setting
+        feedbacks:
+          actions:
+            create_new: Pridať Feedback
+            reorder: Preusporiadať Feedbacks
+            reorder_done: Koniec radenia Feedbacks
+          records:
+            title: Feedbacks
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Feedbacks. Kliknite na "Pridať Feedback"
+              pre pridanie prvého feedback.
+          feedback:
+            view_live_html: Zobraziť náhľad feedback<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť feedback
+            delete: Zmazať feedback
+      settings:
+        show:
+          other: Daľšie Settings
+      feedbacks:
+        show:
+          other: Daľšie Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

@@ -1,0 +1,40 @@
+<%= form_for [refinery, :feedbacks, @feedback] do |f| %>
+  <% if @feedback.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@feedback.errors.count, "error") %> prohibited this feedback from being saved:</h2>
+
+      <ul>
+      <% @feedback.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :Имя %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :Тип_ответа %>
+    <%= f.radio_button_tag 'requestion', 'Email'%> Email 
+    <%= f.radio_button_tag 'requestion', 'Phone' %> Телефон
+    if checked = true f.requestion="Email"
+<%= %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :Телефон %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :Сообщение %><br />
+    <%= f.text_area :message, rows: 6 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

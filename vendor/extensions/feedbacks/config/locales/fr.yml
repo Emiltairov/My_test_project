@@ -1,0 +1,54 @@
+fr:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Setting
+            reorder: Réordonner les Settings
+            reorder_done: Fin de réordonnancement des Settings
+          records:
+            title: Settings
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Setting. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Setting" pour créer votre premi(er/ère) setting.
+          setting:
+            view_live_html: Voir ce(t/tte) setting <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) setting
+            delete: Supprimer définitivement ce(t/tte) setting
+        feedbacks:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Feedback
+            reorder: Réordonner les Feedbacks
+            reorder_done: Fin de réordonnancement des Feedbacks
+          records:
+            title: Feedbacks
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Feedback. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Feedback" pour créer votre premi(er/ère) feedback.
+          feedback:
+            view_live_html: Voir ce(t/tte) feedback <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) feedback
+            delete: Supprimer définitivement ce(t/tte) feedback
+      settings:
+        show:
+          other: Autres Settings
+      feedbacks:
+        show:
+          other: Autres Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

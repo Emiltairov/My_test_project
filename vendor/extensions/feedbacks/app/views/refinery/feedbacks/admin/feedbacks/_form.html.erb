@@ -1,0 +1,42 @@
+<%= form_for [refinery, :feedbacks_admin, @feedback] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @feedback,
+              :include_object_name => true %>
+  <div class="field">
+    <%= f.label :Имя %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :Тип_ответа %>
+    <%= radio_button_tag 'requestion', 'Email' %> Email <%= radio_button_tag 'requestion', 'Phone' %> Телефон
+  </div>
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :phone -%>
+    <%= f.text_field :phone -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:message],
+                :object => "feedbacks/feedback" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.feedbacks.admin.feedbacks.feedback'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @feedback.email) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

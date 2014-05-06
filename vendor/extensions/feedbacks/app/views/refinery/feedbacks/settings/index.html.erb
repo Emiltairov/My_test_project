@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="settings">
+    <% @settings.each do |setting| %>
+      <li>
+        <%= link_to setting.mail_adm, refinery.feedbacks_setting_path(setting) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

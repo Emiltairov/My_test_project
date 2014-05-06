@@ -1,0 +1,56 @@
+nb:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Lag en ny Setting
+            reorder: Endre rekkefølgen på Settings
+            reorder_done: Ferdig å endre rekkefølgen Settings
+          records:
+            title: Settings
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Settings enda. Klikk på "Lag en ny Setting"
+              for å legge til din første setting.
+          setting:
+            view_live_html: Vis hvordan denne setting ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne setting
+            delete: Fjern denne setting permanent
+        feedbacks:
+          actions:
+            create_new: Lag en ny Feedback
+            reorder: Endre rekkefølgen på Feedbacks
+            reorder_done: Ferdig å endre rekkefølgen Feedbacks
+          records:
+            title: Feedbacks
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Feedbacks enda. Klikk på "Lag en ny Feedback"
+              for å legge til din første feedback.
+          feedback:
+            view_live_html: Vis hvordan denne feedback ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne feedback
+            delete: Fjern denne feedback permanent
+      settings:
+        show:
+          other: Andre Settings
+      feedbacks:
+        show:
+          other: Andre Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

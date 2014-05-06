@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @setting.mail_adm %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Mail Adm</h1>
+    <p>
+      <%=raw @setting.mail_adm %>
+    </p>
+  </section>
+  <section>
+    <h1>Question</h1>
+    <p>
+      <%=raw @setting.question %>
+    </p>
+  </section>
+  <section>
+    <h1>Mail Otd</h1>
+    <p>
+      <%=raw @setting.mail_otd %>
+    </p>
+  </section>
+  <section>
+    <h1>Conf Mail</h1>
+    <p>
+      <%=raw @setting.conf_mail %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="settings">
+      <% @settings.each do |setting| %>
+        <li>
+          <%= link_to setting.mail_adm, refinery.feedbacks_setting_path(setting) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

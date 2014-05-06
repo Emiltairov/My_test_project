@@ -1,0 +1,56 @@
+es:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Crear nuevo setting
+            reorder: Reordenar settings
+            reorder_done: Reordenación de settings completada
+          records:
+            title: Settings
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay settings todavía. Pulsa en "Crear nuevo Setting"
+              para crear tu primer setting.
+          setting:
+            view_live_html: Ver este setting como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este setting
+            delete: Borrar este setting para siempre
+        feedbacks:
+          actions:
+            create_new: Crear nuevo feedback
+            reorder: Reordenar feedbacks
+            reorder_done: Reordenación de feedbacks completada
+          records:
+            title: Feedbacks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay feedbacks todavía. Pulsa en "Crear nuevo Feedback"
+              para crear tu primer feedback.
+          feedback:
+            view_live_html: Ver este feedback como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este feedback
+            delete: Borrar este feedback para siempre
+      settings:
+        show:
+          other: Otros settings
+      feedbacks:
+        show:
+          other: Otros feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

@@ -1,0 +1,54 @@
+en:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Add New Setting
+            reorder: Reorder Settings
+            reorder_done: Done Reordering Settings
+          records:
+            title: Settings
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Settings yet. Click "Add New Setting" to add
+              your first setting.
+          setting:
+            view_live_html: View this setting live <br/><em>(opens in a new window)</em>
+            edit: Edit this setting
+            delete: Remove this setting forever
+        feedbacks:
+          actions:
+            create_new: Add New Feedback
+            reorder: Reorder Feedbacks
+            reorder_done: Done Reordering Feedbacks
+          records:
+            title: Feedbacks
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Feedbacks yet. Click "Add New Feedback" to
+              add your first feedback.
+          feedback:
+            view_live_html: View this feedback live <br/><em>(opens in a new window)</em>
+            edit: Edit this feedback
+            delete: Remove this feedback forever
+      settings:
+        show:
+          other: Other Settings
+      feedbacks:
+        show:
+          other: Other Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message

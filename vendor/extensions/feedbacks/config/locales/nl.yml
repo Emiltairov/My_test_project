@@ -1,0 +1,56 @@
+nl:
+  refinery:
+    plugins:
+      settings:
+        title: Settings
+      feedbacks:
+        title: Feedbacks
+    feedbacks:
+      admin:
+        settings:
+          actions:
+            create_new: Nieuwe Setting toevoegen
+            reorder: De volgorde van de Settings wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Setting-volgorde
+          records:
+            title: Settings
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Settings. Druk op 'Nieuwe Setting toevoegen'
+              om de eerste toe te voegen.
+          setting:
+            view_live_html: Deze setting op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze setting
+            delete: Deze setting definitief verwijderen
+        feedbacks:
+          actions:
+            create_new: Nieuwe Feedback toevoegen
+            reorder: De volgorde van de Feedbacks wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Feedback-volgorde
+          records:
+            title: Feedbacks
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Feedbacks. Druk op 'Nieuwe Feedback toevoegen'
+              om de eerste toe te voegen.
+          feedback:
+            view_live_html: Deze feedback op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze feedback
+            delete: Deze feedback definitief verwijderen
+      settings:
+        show:
+          other: Andere Settings
+      feedbacks:
+        show:
+          other: Andere Feedbacks
+  activerecord:
+    attributes:
+      refinery/feedbacks/setting:
+        mail_adm: Mail Adm
+        question: Question
+        mail_otd: Mail Otd
+        conf_mail: Conf Mail
+      refinery/feedbacks/feedback:
+        email: Email
+        phone: Phone
+        message: Message
