@@ -25,7 +25,7 @@ Refinery::Core::Engine.routes.draw do
   # Admin routes
   namespace :feedbacks, :path => '' do
     namespace :admin, :path => "#{Refinery::Core.backend_route}/feedbacks" do
-      resources :settings, :except => :show do
+      resources :settings do
         collection do
           post :update_positions
         end
