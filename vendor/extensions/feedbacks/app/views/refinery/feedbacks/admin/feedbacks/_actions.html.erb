@@ -8,6 +8,11 @@
     <%= link_to t('.create_new'), refinery.new_feedbacks_admin_feedback_path,
                  :class => "add_icon" %>
   </li>
+    <li>
+      <%= link_to t('.edit_confirmation_email'),
+                  refinery.feedbacks_admin_setting_path(:feedback_confirmation, :dialog => true),
+                  :class => "edit_email_icon" %>
+    </li>
 <% if !searching? && ::Refinery::Feedbacks::Admin::FeedbacksController.sortable? && ::Refinery::Feedbacks::Feedback.many? %>
   <li>
     <%= link_to t('.reorder', :what => "Feedbacks"),
@@ -21,10 +26,6 @@
                  :style => "display: none;",
                  :class => "reorder_icon" %>
   </li>
-    <li>
-      <%= link_to t('.edit_confirmation_email'),
-                  refinery.feedbacks_admin_setting_path(:feedback_confirmation, :dialog => true),
-                  :class => "edit_email_icon" %>
-    </li>
+
 <% end %>
 </ul>
