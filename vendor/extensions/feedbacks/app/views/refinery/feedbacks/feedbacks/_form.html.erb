@@ -16,8 +16,10 @@
   </div>
   <div class="field">
     <%= f.label :Тип_ответа %>
-    <%= f.radio_button("feedback", "category", "rails")%> Email 
-    <%= f.radio_button_tag 'requestion', 'Phone' %> Телефон
+<%= f.radio_button :requestion, "Email" %>
+<%= f.label :requestion, "Email", :value => "Email" %>
+<%= f.radio_button :requestion, "Phone" %>
+<%= f.label :requestion, "Phone", :value => "Phone" %>
   </div>
   <div class="field">
     <%= f.label :Email %><br />
