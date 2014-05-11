@@ -2,9 +2,11 @@ module Refinery
   module Feedbacks
     class Setting < Refinery::Core::BaseModel
 
-      attr_accessible :mail_adm, :question, :mail_otd, :conf_mail, :position
+      has_many :feedbacks
 
-      validates :mail_adm, :presence => true, :uniqueness => true
+      attr_accessible :mail_adm, :question, :mail_otd, :conf_mail, :position
+       validates :question, :presence => true
+       validates :mail_otd,   :email => { :mx => true }
     end
   end
 end

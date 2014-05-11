@@ -3,10 +3,6 @@
               :object => @setting,
               :include_object_name => true %>
 
-  <div class='field'>
-    <%= f.label :mail_adm -%>
-    <%= f.text_field :mail_adm, :class => 'larger widest' -%>
-  </div>
 
   <div class='field'>
     <%= f.label :question -%>
@@ -18,10 +14,6 @@
     <%= f.text_field :mail_otd -%>
   </div>
 
-  <div class='field'>
-    <%= f.label :conf_mail -%>
-    <%= f.text_field :conf_mail -%>
-  </div>
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,

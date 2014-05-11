@@ -1,6 +1,9 @@
 <li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(feedback) -%>">
   <span class='title'>
-    <%= feedback.email %>
+      <%= feedback.name %>  
+<% if !feedback.email.blank? %>[<%= mail_to feedback.email, feedback.email, {:title => 'click to email'} %>]<% end %> 
+<% if !feedback.phone.blank? %>[<%= feedback.phone %>]<% end %> 
+
 
   </span>
   <span class='actions'>

@@ -11,18 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140507170030) do
+ActiveRecord::Schema.define(:version => 20140510130541) do
 
   create_table "refinery_feedbacks", :force => true do |t|
+    t.integer  "setting_id"
     t.string   "name"
     t.string   "email"
     t.string   "phone"
     t.text     "message"
     t.string   "requestion"
+    t.string   "question"
     t.integer  "position"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "question"
   end
 
   create_table "refinery_feedbacks_settings", :force => true do |t|

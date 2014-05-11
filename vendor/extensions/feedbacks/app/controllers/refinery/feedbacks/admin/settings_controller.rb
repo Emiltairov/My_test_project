@@ -3,14 +3,9 @@ module Refinery
     module Admin
       class SettingsController < ::Refinery::AdminController
 
- 	def new
-	end
-
-	def show
-	end
-
-	def edit
-	end
+        crudify :'refinery/feedbacks/setting',
+                :title_attribute => 'mail_adm',
+                :xhr_paging => true
 
       end
     end

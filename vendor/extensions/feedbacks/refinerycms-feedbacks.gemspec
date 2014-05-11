@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-feedbacks'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Feedbacks extension for Refinery CMS'
-  s.date              = '2014-05-06'
+  s.date              = '2014-05-10'
   s.summary           = 'Feedbacks extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]

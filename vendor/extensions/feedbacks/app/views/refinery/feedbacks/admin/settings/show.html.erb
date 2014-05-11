@@ -1,0 +1,33 @@
+<div id='actions'>
+  <h2>Actions</h2>
+  <ul>
+    <li>
+      <%= link_to 'Возврат к списку отделов',
+                  refinery.feedbacks_admin_settings_path,
+                  :class => "back_icon" %>
+    </li>
+    <li>
+      <%= link_to 'Удаление отдела',
+                  refinery.feedbacks_admin_setting_path(@setting),
+                  :class => 'delete_icon no-tooltip confirm-delete',
+
+                  :data => {
+                    :confirm => 'Вы действительно хотите удалить отдел?', :title => @setting.mail_otd
+                  },
+                  :method => :delete %>
+    </li>
+  </ul>
+</div>
+<div id='records'>
+  <h2>Просмотр отдела<%= @setting.id %></h2>
+  <table id='setting'>
+    <tr>
+      <td>
+        <strong>Название отдела</strong>
+      </td>
+      <td>
+        <%= @setting.question %> [<%= mail_to @setting.mail_otd, @setting.mail_otd, {:title => 'click to email'} %>]
+      </td>
+    </tr>
+  </table>
+</div>

@@ -3,6 +3,8 @@ module Refinery
     class Feedback < Refinery::Core::BaseModel
       self.table_name = 'refinery_feedbacks'
 
+      belongs_to :setting
+
       attr_accessible :name, :email, :phone, :message,:requestion, :position
       after_create  :send_notfication
 
