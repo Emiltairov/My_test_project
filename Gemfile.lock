@@ -39,12 +39,8 @@ GEM
     awesome_nested_set (2.1.6)
       activerecord (>= 3.0.0)
     babosa (0.3.11)
-    bcrypt (3.1.7)
-    bcrypt (3.1.7-x86-mingw32)
-    bcrypt-ruby (3.1.5)
-      bcrypt (>= 3.1.3)
-    bcrypt-ruby (3.1.5-x86-mingw32)
-      bcrypt (>= 3.1.3)
+    bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -111,6 +107,7 @@ GEM
     rake (10.3.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    recaptcha (0.3.6)
     refinerycms (2.1.1)
       bundler (>= 1.2.2, < 2.0)
       refinerycms-authentication (= 2.1.1)
@@ -193,9 +190,11 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.15)
+  recaptcha
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-feedbacks!

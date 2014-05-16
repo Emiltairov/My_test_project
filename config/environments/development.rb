@@ -1,6 +1,12 @@
 TestProject::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+
+# Set variables for Recaptcha on Localhost
+    ENV['RECAPTCHA_PUBLIC_KEY'] =  '6LdRlfMSAAAAAHeUOPRHx6FRE-qQQ6HXoACKlzv_'
+    ENV['RECAPTCHA_PRIVATE_KEY'] = '6LdRlfMSAAAAADlcBYdCvDqcAkMKl67wJGr-aqq5'
+
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.

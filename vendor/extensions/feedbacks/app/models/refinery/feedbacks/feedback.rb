@@ -2,10 +2,14 @@ module Refinery
   module Feedbacks
     class Feedback < Refinery::Core::BaseModel
       self.table_name = 'refinery_feedbacks'
+  #=>тут капчер
+      has_secure_password
+      validates_presence_of :password, on: :create
+  #=>тут капчер
 
       belongs_to :setting
 
-      attr_accessible :name, :email, :phone, :message,:requestion, :position
+      attr_accessible :name, :email, :phone, :message,:question, :requestion, :position
       after_create  :send_notfication
 
       def send_notfication

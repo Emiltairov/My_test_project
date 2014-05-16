@@ -14,24 +14,15 @@ module Refinery
       end
       
       def create
-        @feedback = Feedback.new(params[:feedback])
-        
-        respond_to do |format|
-          if @feedback.save
-            format.html { redirect_to '/feedbacks', notice: 'Feedback was successfully created.' }
-            format.json { render json: @feedback, status: :created, location: @feedback }
-#=>         FeedbackMailer.notification(@feedback, request).deliver
-          else
-            format.html { render action: "new" }
-            format.json { render json: @feedback.errors, status: :unprocessable_entity }
-          end
-        end
-      end
-
-  
-   
+captcha_message = "The data you entered for the CAPTCHA wasn't correct.  Please try again"
+    @feedback = Feedback.new(params[:feedback])
+    if !verify_recaptcha(model: @feedback, message: captcha_message, :private_key => ENV['RECAPTCHA_PRIVATE_KEY']) || !@feedback.save
+      render "new"
+    end
+   end
+ 
       def new 
-         @feedback = Feedback.new
+        @feedback = Feedback.new
          present(@page)
       end
 
